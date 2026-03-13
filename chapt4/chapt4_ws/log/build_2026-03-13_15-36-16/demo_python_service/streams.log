@@ -1,0 +1,25 @@
+[0.293s] Invoking command in '/home/dly/chapt4/chapt4_ws/src/demo_python_service': PYTHONPATH=/home/dly/chapt4/chapt4_ws/build/demo_python_service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dly/chapt4/chapt4_ws/install/demo_python_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_python_service build --build-base /home/dly/chapt4/chapt4_ws/build/demo_python_service/build install --record /home/dly/chapt4/chapt4_ws/build/demo_python_service/install.log --single-version-externally-managed install_data
+[0.399s] running egg_info
+[0.399s] writing ../../build/demo_python_service/demo_python_service.egg-info/PKG-INFO
+[0.399s] writing dependency_links to ../../build/demo_python_service/demo_python_service.egg-info/dependency_links.txt
+[0.399s] writing entry points to ../../build/demo_python_service/demo_python_service.egg-info/entry_points.txt
+[0.399s] writing requirements to ../../build/demo_python_service/demo_python_service.egg-info/requires.txt
+[0.399s] writing top-level names to ../../build/demo_python_service/demo_python_service.egg-info/top_level.txt
+[0.399s] reading manifest file '../../build/demo_python_service/demo_python_service.egg-info/SOURCES.txt'
+[0.400s] adding license file 'LICENSE'
+[0.400s] writing manifest file '../../build/demo_python_service/demo_python_service.egg-info/SOURCES.txt'
+[0.400s] running build
+[0.400s] running build_py
+[0.400s] copying demo_python_service/learn_face_detect.py -> /home/dly/chapt4/chapt4_ws/build/demo_python_service/build/lib/demo_python_service
+[0.400s] running install
+[0.400s] running install_lib
+[0.401s] copying /home/dly/chapt4/chapt4_ws/build/demo_python_service/build/lib/demo_python_service/learn_face_detect.py -> /home/dly/chapt4/chapt4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service
+[0.401s] byte-compiling /home/dly/chapt4/chapt4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service/learn_face_detect.py to learn_face_detect.cpython-310.pyc
+[0.402s] running install_data
+[0.402s] running install_egg_info
+[0.403s] removing '/home/dly/chapt4/chapt4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service-0.0.0-py3.10.egg-info' (and everything under it)
+[0.406s] Copying ../../build/demo_python_service/demo_python_service.egg-info to /home/dly/chapt4/chapt4_ws/install/demo_python_service/lib/python3.10/site-packages/demo_python_service-0.0.0-py3.10.egg-info
+[0.406s] running install_scripts
+[0.417s] Installing learn_face_detect script to /home/dly/chapt4/chapt4_ws/install/demo_python_service/lib/demo_python_service
+[0.417s] writing list of installed files to '/home/dly/chapt4/chapt4_ws/build/demo_python_service/install.log'
+[0.430s] Invoked command in '/home/dly/chapt4/chapt4_ws/src/demo_python_service' returned '0': PYTHONPATH=/home/dly/chapt4/chapt4_ws/build/demo_python_service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dly/chapt4/chapt4_ws/install/demo_python_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_python_service build --build-base /home/dly/chapt4/chapt4_ws/build/demo_python_service/build install --record /home/dly/chapt4/chapt4_ws/build/demo_python_service/install.log --single-version-externally-managed install_data
