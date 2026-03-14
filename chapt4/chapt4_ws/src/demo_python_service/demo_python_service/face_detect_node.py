@@ -1,5 +1,6 @@
 import rclpy
 from rclpy.node import Node
+from rcl_interfaces.msg import SetParametersResult
 from chapt4_interfaces.srv import FaceDetector
 import face_recognition
 import cv2
@@ -12,11 +13,30 @@ class FaceDetectNode(Node):
         super().__init__("face_detect_node")
         self.service_ = self.create_service(FaceDetector, 'face_detect', self.detect_face_callback)
         self.bridge = CvBridge()
-        self.model = 'hog'
-        self.image_upper = 1
+
+        # ros2参数获取
+        self.declare_parameter("image_upper", 1)
+        self.declare_parameter('model', 'hog')
+
+        # self.model = 'hog'
+        # self.image_upper = 1
+
+        self.model = self.get_parameter('model').value # 默认值
+        self.image_upper = self.get_parameter('image_upper').value       
         self.image_path = get_package_share_directory('demo_python_service') + '/resource/ros2_test_image.png'
-        self.get_logger().info(f"face_node加载")
+        self.get_logger().info(f"face_node 加载")
+        self.add_on_set_parameters_callback(self.parameters_callback)
+
     
+    def parameters_callback(self, paramters):
+        for paramter in paramters:
+            self.get_logger().info(f"{paramter.name}->{paramter.value}")
+            if paramter.name == "image_upper":
+                self.image_upper = paramter.value
+            if paramter.name == "model":
+                self.model = paramter.value
+        return SetParametersResult(successful=True)
+
     def detect_face_callback(self, request, response):
         if request.image.data:
             cv_image = self.bridge.imgmsg_to_cv2(request.image) # ros2图像格式转为opencv格式

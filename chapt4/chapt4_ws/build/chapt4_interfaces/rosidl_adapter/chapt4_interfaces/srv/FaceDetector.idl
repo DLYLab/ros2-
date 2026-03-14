@@ -11,6 +11,8 @@ module chapt4_interfaces {
         "人脸图像")
       sensor_msgs::msg::Image image;
     };
+    @verbatim (language="comment", text=
+      "在service中是必须的，用于区分请求和响应的消息类型")
     struct FaceDetector_Response {
       int16 number;
 

@@ -1,4 +1,5 @@
 
+#在service中是必须的，用于区分请求和响应的消息类型
 int16 number
 float32 use_time
 int32[] top
