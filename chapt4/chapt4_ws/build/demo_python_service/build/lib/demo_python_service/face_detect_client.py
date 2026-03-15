@@ -17,7 +17,7 @@ class FaceDetectClientNode(Node):
         self.bridge = CvBridge()
         self.image_path = get_package_share_directory('demo_python_service') + '/resource/ros2_test_image2.png'
         self.client = self.create_client(FaceDetector, 'face_detect')
-        self.get_logger().info(f"face_clent_node加载")
+        self.get_logger().info(f"face_clent_client_node加载")
         self.image = cv2.imread(self.image_path)
     
     def call_set_paramter(self, paramters):

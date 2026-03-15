@@ -13,6 +13,8 @@ demo_python_service/__init__.py
 demo_python_service/face_detect_client.py
 demo_python_service/face_detect_node.py
 demo_python_service/learn_face_detect.py
+launch/actions.launch.py
+launch/demo.launch.py
 resource/demo_python_service
 resource/ros2_test_image.png
 resource/ros2_test_image2.png
